@@ -1,15 +1,48 @@
-# Global Happiness Report Analysis
+# 🌍 World Happiness Report 2015 - Interactive Analytics & Web App
 
-## Overview
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Libraries](https://img.shields.io/badge/Stack-Streamlit%20%7C%20Plotly%20%7C%20Pandas%20%7C%20Seaborn-indigo.svg)](https://streamlit.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+> An exploratory data analysis and interactive web dashboard analyzing the **UN World Happiness Report** dataset (`2015.csv`). Explore how GDP, social support, life expectancy, freedom, and government trust drive happiness across 158 nations worldwide.
+
+---
+
+## 🔗 Quick Links & Live Demos
+
+- 🚀 **Live Streamlit Web App:** [Click here to launch the live web app](https://share.streamlit.io/) *(Replace with your live deployed URL once deployed)*
+- 🎥 **Video Walkthrough:** [Watch Google Drive Demo](https://drive.google.com/file/d/1WuKIhkcrFSNLyFtjrTyS175vYUC9ttOl/view?usp=sharing)
+- 📊 **Main Analysis Script:** [`fp.py`](fp.py)
+- 🌐 **Interactive Dashboard:** [`app.py`](app.py)
+
+---
+
+## 🌟 Interactive Web Dashboard (`app.py`)
+
+A full-featured Streamlit application built on top of the exploratory analysis:
+
+1. **🗺️ Interactive Global Choropleth Map**: Dynamic Plotly world map with hover tooltips displaying each nation's rank, score, GDP, health, and freedom.
+2. **🏆 Dynamic Leaderboards**: Configurable Top N and Bottom N country rankings with interactive sliders and regional average comparisons.
+3. **📊 Bivariate Scatter Explorer & Heatmap**: Select any two metrics to plot dynamic scatter plots with linear regression trendlines and $R^2$ fit scores.
+4. **⚖️ Multi-Country Radar Comparison**: Compare 2 to 5 nations side-by-side using 6-factor normalized spider/radar charts.
+5. **🧮 What-If Happiness Simulator**: Adjust national economic, social, and health factors using sliders to calculate a predicted happiness score based on Multiple Linear Regression.
+6. **📁 Data Explorer & CSV Export**: Searchable and filterable dataset table with one-click CSV export and summary statistics.
+
+### Run the Web App Locally:
+```bash
+streamlit run app.py
+```
+*(Or run `python -m streamlit run app.py`)*
+
+---
+
+## 📖 Project Overview
 This project processes the `2015.csv` dataset using Python's data science ecosystem (`pandas`, `numpy`, `matplotlib`, and `seaborn`) to perform visual analysis on how different factors like GDP, Family, Health, Freedom, and Government Trust impact a country's overall Happiness Score.
 
 ---
 
-Video Explanation : https://drive.google.com/file/d/1WuKIhkcrFSNLyFtjrTyS175vYUC9ttOl/view?usp=sharing
-
----
-
-## Dataset Details
+## 📋 Dataset Details
 The dataset `2015.csv` contains the following attributes for 158 countries:
 
 | Column Name | Description |
@@ -29,24 +62,35 @@ The dataset `2015.csv` contains the following attributes for 158 countries:
 
 ---
 
+## ⚙️ Requirements & Installation
 
-## Requirements
 Make sure you have Python installed, along with the following packages:
 ```bash
-pip install numpy pandas matplotlib seaborn
+pip install -r requirements.txt
+```
+*Or install them manually:*
+```bash
+pip install numpy pandas matplotlib seaborn streamlit plotly
 ```
 
 ---
 
-## Usage
-To execute the visualization script, run the following command in your terminal:
+## 🚀 Usage
+
+### 1. Run the Interactive Web Application:
+```bash
+streamlit run app.py
+```
+
+### 2. Run the Static Analysis & Generate Plots:
 ```bash
 python fp.py
 ```
+
 ---
 
-## Key Features & Visualizations
-The script [`fp.py`](file:///d:/RD/weekly%20task/final%20project/fp.py) performs the following analytical tasks and generates corresponding visualizations:
+## 📌 Key Features & Visualizations
+The script [`fp.py`](fp.py) performs the following analytical tasks and generates corresponding visualizations:
 
 1. **Dataset Profiling**: Loads and profiles the data (`info()`, `isnull().sum()`).
 2. **Correlation Heatmap**: A seaborn heatmap illustrating correlation coefficients between all numerical features.
@@ -65,7 +109,7 @@ The script [`fp.py`](file:///d:/RD/weekly%20task/final%20project/fp.py) performs
 
 ---
 
-## Code Explanation & Visualizations
+## 🔬 Code Explanation & Visualizations
 
 Here is a block-by-block breakdown of the code in [`fp.py`] alongside their corresponding visual outputs and analytical insights:
 
@@ -235,3 +279,38 @@ plt.show()
 - **Output Visualization**:
   ![GDP Boxplot](images/gdp_boxplot.png)
 - **Key Insight**: The median contribution of GDP per capita sits around **0.91**. The box extends from approximately 0.54 (25th percentile) to 1.15 (75th percentile), indicating a wide economic gap between the bottom 25% and top 25% of countries.
+
+---
+
+## 🗂️ Project Repository Structure
+
+```text
+.
+├── .streamlit/
+│   └── config.toml          # Custom dark modern UI theme for Streamlit
+├── images/                  # Generated plots and figures from fp.py
+│   ├── correlation_heatmap.png
+│   ├── happiest_countries.png
+│   ├── gdp_vs_happiness.png
+│   ├── family_vs_happiness.png
+│   ├── health_vs_happiness.png
+│   ├── freedom_vs_happiness.png
+│   ├── trust_vs_happiness.png
+│   ├── happiness_distribution.png
+│   ├── pairplot.png
+│   ├── top_20_gdp.png
+│   ├── freedom_regression.png
+│   └── gdp_boxplot.png
+├── 2015.csv                 # UN World Happiness Report 2015 dataset
+├── app.py                   # Streamlit interactive web application
+├── fp.py                    # Standalone exploratory data analysis script
+├── fp.ipynb                 # Interactive Jupyter Notebook
+├── requirements.txt         # Package dependencies for local setup & Streamlit Cloud
+├── .gitignore               # Ignored cache & temporary files
+└── README.md                # Project documentation
+```
+
+---
+
+## 📜 License
+Distributed under the MIT License.
