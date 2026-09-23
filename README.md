@@ -1,22 +1,32 @@
-# 🌍 World Happiness Report 2015 - Interactive Analytics & Web App
+<div align="center">
+
+# 🌍 World Happiness Report 2015
+### 🚀 Exploratory Data Analysis & Interactive Web Dashboard
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Libraries](https://img.shields.io/badge/Stack-Streamlit%20%7C%20Plotly%20%7C%20Pandas%20%7C%20Seaborn-indigo.svg)](https://streamlit.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://seaborn.pydata.org/)
 
-> An exploratory data analysis and interactive web dashboard analyzing the **UN World Happiness Report** dataset (`2015.csv`). Explore how GDP, social support, life expectancy, freedom, and government trust drive happiness across 158 nations worldwide.
+<br>
+
+<p align="center">
+  <b>An end-to-end data analytics study investigating global well-being across 158 nations.</b>
+  <br>
+  Featuring deep correlation analysis, regional rankings, interactive choropleth world mapping, multi-country radar benchmarking, and an AI-driven Happiness Score Simulator.
+</p>
+
+<p align="center">
+  <a href="https://share.streamlit.io/"><img src="https://img.shields.io/badge/🚀%20Launch%20Live%20Web%20App-Streamlit%20Cloud-6366F1?style=for-the-badge" alt="Launch Live Web App"></a>
+  &nbsp;
+  <a href="https://drive.google.com/file/d/1WuKIhkcrFSNLyFtjrTyS175vYUC9ttOl/view?usp=sharing"><img src="https://img.shields.io/badge/🎥%20Watch%20Video%20Demo-Google%20Drive-E11D48?style=for-the-badge" alt="Watch Video Demo"></a>
+</p>
 
 ---
 
-## 🔗 Quick Links & Live Demos
-
-- 🚀 **Live Streamlit Web App:** [Click here to launch the live web app](https://share.streamlit.io/) *(Replace with your live deployed URL once deployed)*
-- 🎥 **Video Walkthrough:** [Watch Google Drive Demo](https://drive.google.com/file/d/1WuKIhkcrFSNLyFtjrTyS175vYUC9ttOl/view?usp=sharing)
-- 📊 **Main Analysis Script:** [`fp.py`](fp.py)
-- 🌐 **Interactive Dashboard:** [`app.py`](app.py)
-
----
+</div>
 
 ## 🌟 Interactive Web Dashboard (`app.py`)
 
@@ -279,38 +289,3 @@ plt.show()
 - **Output Visualization**:
   ![GDP Boxplot](images/gdp_boxplot.png)
 - **Key Insight**: The median contribution of GDP per capita sits around **0.91**. The box extends from approximately 0.54 (25th percentile) to 1.15 (75th percentile), indicating a wide economic gap between the bottom 25% and top 25% of countries.
-
----
-
-## 🗂️ Project Repository Structure
-
-```text
-.
-├── .streamlit/
-│   └── config.toml          # Custom dark modern UI theme for Streamlit
-├── images/                  # Generated plots and figures from fp.py
-│   ├── correlation_heatmap.png
-│   ├── happiest_countries.png
-│   ├── gdp_vs_happiness.png
-│   ├── family_vs_happiness.png
-│   ├── health_vs_happiness.png
-│   ├── freedom_vs_happiness.png
-│   ├── trust_vs_happiness.png
-│   ├── happiness_distribution.png
-│   ├── pairplot.png
-│   ├── top_20_gdp.png
-│   ├── freedom_regression.png
-│   └── gdp_boxplot.png
-├── 2015.csv                 # UN World Happiness Report 2015 dataset
-├── app.py                   # Streamlit interactive web application
-├── fp.py                    # Standalone exploratory data analysis script
-├── fp.ipynb                 # Interactive Jupyter Notebook
-├── requirements.txt         # Package dependencies for local setup & Streamlit Cloud
-├── .gitignore               # Ignored cache & temporary files
-└── README.md                # Project documentation
-```
-
----
-
-## 📜 License
-Distributed under the MIT License.
