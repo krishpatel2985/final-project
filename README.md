@@ -3,7 +3,7 @@
 # 🌍 World Happiness Report 2015
 ### 🚀 Exploratory Data Analysis & Interactive Web Dashboard
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://final-project-xaeyzury9qfs4ypn35mr5.streamlit.app/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <a href="https://share.streamlit.io/"><img src="https://img.shields.io/badge/🚀%20Launch%20Live%20Web%20App-Streamlit%20Cloud-6366F1?style=for-the-badge" alt="Launch Live Web App"></a>
+  <a href="https://final-project-xaeyzury9qfs4ypn35mr5.streamlit.app/"><img src="https://img.shields.io/badge/🚀%20Launch%20Live%20Web%20App-Streamlit%20Cloud-6366F1?style=for-the-badge" alt="Launch Live Web App"></a>
   &nbsp;
   <a href="https://drive.google.com/file/d/1WuKIhkcrFSNLyFtjrTyS175vYUC9ttOl/view?usp=sharing"><img src="https://img.shields.io/badge/🎥%20Watch%20Video%20Demo-Google%20Drive-E11D48?style=for-the-badge" alt="Watch Video Demo"></a>
 </p>
